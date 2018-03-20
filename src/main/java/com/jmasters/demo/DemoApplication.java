@@ -1,10 +1,6 @@
 package com.jmasters.demo;
 
-import com.jmasters.demo.model.Evaluation.Grille;
-import com.jmasters.demo.model.Users.Candidat;
-import com.jmasters.demo.model.Users.Compte;
 import com.jmasters.demo.model.Users.MembreCun;
-import com.jmasters.demo.model.Users.Validateur;
 import com.jmasters.demo.repository.Depot.DossierRepository;
 import com.jmasters.demo.repository.Evaluation.CunRepository;
 import com.jmasters.demo.repository.Evaluation.GrilleRepository;
@@ -43,7 +39,8 @@ public class DemoApplication implements CommandLineRunner {
 	@Autowired
 	private DossierRepository dossierRepository;
 
-
+    @Autowired
+    private UtilisateurRepository userRepository;
 
 
 	public static void main(String[] args) {
@@ -52,9 +49,7 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		//Validateur validateur =new Validateur();
-		MembreCun membreCun =new MembreCun();
-		membreCunRepository.save(membreCun);
+
 
 	}
 }

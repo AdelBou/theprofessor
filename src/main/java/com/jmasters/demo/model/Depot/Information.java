@@ -15,7 +15,7 @@ public class Information {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private int designationInfo;
-	private int typeInfo;
+	private int valeur;
 	private String contenu;
 	private  long coef;
 	private boolean valide;
@@ -45,13 +45,6 @@ public class Information {
 		this.designationInfo = designationInfo;
 	}
 
-	public int getTypeInfo() {
-		return typeInfo;
-	}
-
-	public void setTypeInfo(int typeInfo) {
-		this.typeInfo = typeInfo;
-	}
 
 	public String getContenu() {
 		return contenu;
@@ -109,6 +102,14 @@ public class Information {
 		this.pieceJointes = pieceJointes;
 	}
 
-	public Information() {
+    public int getValeur() {
+        return valeur;
+    }
+
+    public void setValeur(int valeur) {
+        this.valeur = valeur;
+    }
+
+    public Information() {
 	}
 }

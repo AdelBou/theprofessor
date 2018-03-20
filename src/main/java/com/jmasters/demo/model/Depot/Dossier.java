@@ -23,7 +23,19 @@ public class Dossier {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private Date date;
-	@OneToMany(mappedBy = "dossier")
+	private Boolean verifie;
+	private Boolean valide;
+	private Boolean evaluated;
+
+    public Boolean getEvaluated() {
+        return evaluated;
+    }
+
+    public void setEvaluated(Boolean evaluated) {
+        this.evaluated = evaluated;
+    }
+
+    @OneToMany(mappedBy = "dossier")
 	private Set<Information> informations;
 
 	@OneToOne(cascade = CascadeType.ALL)
@@ -63,6 +75,46 @@ public class Dossier {
 		this.informations = informations;
 	}
 
-	public Dossier() {
+    public Boolean getVerifie() {
+        return verifie;
+    }
+
+    public void setVerifie(Boolean verifie) {
+        this.verifie = verifie;
+    }
+
+    public Boolean getValide() {
+        return valide;
+    }
+
+    public void setValide(Boolean valide) {
+        this.valide = valide;
+    }
+
+    public Candidat getCandidat() {
+        return candidat;
+    }
+
+    public void setCandidat(Candidat candidat) {
+        this.candidat = candidat;
+    }
+
+    public Cun getCun() {
+        return cun;
+    }
+
+    public void setCun(Cun cun) {
+        this.cun = cun;
+    }
+
+    public Validateur getValidateur() {
+        return validateur;
+    }
+
+    public void setValidateur(Validateur validateur) {
+        this.validateur = validateur;
+    }
+
+    public Dossier() {
 	}
 }
