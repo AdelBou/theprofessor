@@ -16,6 +16,32 @@ public class Candidat extends Compte {
 	//public Dossier dossier;
 	@ManyToOne(fetch= FetchType.LAZY)
 	@JoinColumn(name="id_specialite")
-	public Specialite specialite;
+	private Specialite specialite;
+	@ManyToOne(fetch= FetchType.LAZY)
+	@JoinColumn(name="id_etablissement")
+	private Etablissement etablissement;
 
+	@OneToOne(mappedBy = "candidat")
+	private Dossier dossier;
+
+
+
+	public Specialite getSpecialite() {
+		return specialite;
+	}
+
+	public void setSpecialite(Specialite specialite) {
+		this.specialite = specialite;
+	}
+
+	public Etablissement getEtablissement() {
+		return etablissement;
+	}
+
+	public void setEtablissement(Etablissement etablissement) {
+		this.etablissement = etablissement;
+	}
+
+	public Candidat() {
+	}
 }

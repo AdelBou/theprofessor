@@ -1,10 +1,13 @@
 package com.jmasters.demo;
 
+import com.jmasters.demo.model.Evaluation.Grille;
 import com.jmasters.demo.model.Users.Candidat;
 import com.jmasters.demo.model.Users.Compte;
 import com.jmasters.demo.model.Users.MembreCun;
 import com.jmasters.demo.model.Users.Validateur;
+import com.jmasters.demo.repository.Depot.DossierRepository;
 import com.jmasters.demo.repository.Evaluation.CunRepository;
+import com.jmasters.demo.repository.Evaluation.GrilleRepository;
 import com.jmasters.demo.repository.Users.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -30,6 +33,18 @@ public class DemoApplication implements CommandLineRunner {
 	private CandidatRepository candidatRepository;
 	@Autowired
 	private CunRepository cunRepository;
+
+	@Autowired
+	private GrilleRepository grilleRepository;
+
+	@Autowired
+	private CritereRepository critereRepository;
+
+	@Autowired
+	private DossierRepository dossierRepository;
+
+
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
