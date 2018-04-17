@@ -19,14 +19,14 @@ public class VerificationServiceImp implements VerificationService {
     private DossierRepository dossierRepository;
 
     @Override
-    public boolean verifyInformation(Etablissement etablissement, Information information) {
+    public boolean verifyInformation(Information information) {
         information.setVerifie(true);
         informationRepository.save(information);
         return true;
     }
 
     @Override
-    public boolean VerifyDossier(Etablissement etablissement, Dossier dossier) {
+    public boolean VerifyDossier(Dossier dossier) {
         boolean ok = true;
         for (Information inf : dossier.getInformations()) ok = ok && inf.isVerifie();
         if (ok) {

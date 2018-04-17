@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+
+    <div th:replace="fragments/header :: header-css"/>
+    <link href="plugins/bower_components/footable/css/footable.core.css" rel="stylesheet">
+    <link href="plugins/bower_components/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <!--<link href="css/checkbox.css" rel="stylesheet">-->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-19175540-9', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <style>
+        input[type=checkbox].css-checkbox {
+            position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+        }
+
+        input[type=checkbox].css-checkbox + label.css-label {
+            padding-left:29px;
+            height:24px;
+            display:inline-block;
+            line-height:24px;
+            background-repeat:no-repeat;
+            background-position: 0 0;
+            font-size:24px;
+            vertical-align:middle;
+            cursor:pointer;
+
+        }
+
+        input[type=checkbox].css-checkbox:checked + label.css-label {
+            background-position: 0 -24px;
+        }
+        label.css-label {
+            background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_25c68cea905658aa397c192548f75f50.png);
+            /*background-image:url(static/plugins/images/CheckPng.png);*/
+             -webkit-touch-callout: none;
+             -webkit-user-select: none;
+             -khtml-user-select: none;
+             -moz-user-select: none;
+             -ms-user-select: none;
+            user-select: none;
+        }</style>
+
+</head>
+
+<body class="fix-sidebar">
+<!-- Preloader -->
+<div class="preloader">
+    <div class="cssload-speeding-wheel"></div>
+</div>
+<div id="wrapper">
+    <!-- Top Navigation -->
+
+    <div th:replace="fragments/header :: header"/>
+
+    <!-- End Top Navigation -->
+    <!-- Left navbar-header -->
+
+    <div th:replace="fragments/LeftNavBarRespo :: LeftNavBarRespo"/>
+
+    <!-- Left navbar-header end -->
+
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row bg-title">
+                <!-- .page title -->
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Liste des candidats</h4>
+                </div>
+
+            </div>
+            <!-- .row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle" data-page-size="100">
+                            <thead>
+                            <tr>
+                                <th style="    color: #f7fafc;
+    font-weight: 500;
+    background-color: #4f5467; "> Prénom</th>
+                                <th style="    color: #f7fafc;
+    font-weight: 500;
+    background-color: #4f5467; ">Nom</th>
+                                <th style="    color: #f7fafc;
+    font-weight: 500;
+    background-color: #4f5467; ">Validation </th>
+                                <th style="    color: #f7fafc;
+    font-weight: 500;
+    background-color: #4f5467; ">Dossier validé </th>
+
+
+                            </tr>
+                            </thead>
+                            <div class="form-inline padding-bottom-15">
+                                <div class="row">
+
+                                    <div class="col-sm-6 text-right m-b-20">
+                                        <div class="form-group">
+                                            <input id="demo-input-search2" type="text" placeholder="Search" class="form-control" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <tbody>
+                            <tr>
+
+                                <td>Shona</td>
+                                <td>Woldt</td>
+                                <td><a th:href="@{/Validation}"  >Valider </a></td>
+
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+
+
+
+                            </tr>
+                            <tr>
+
+                                <td>Inas</td>
+                                <td>Lizzee</td>
+                                <td>Valider </td>
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Isidra</td>
+                                <td>Boudreaux</td>
+                                <td>Valider </td>
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Doris</td>
+                                <td>Michael</td>
+                                <td>Valider </td>
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Lauri</td>
+                                <td>Hyland</td>
+                                <td>Valider </td>
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG5" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Maple</td>
+                                <td>Halladay</td>
+                                <td>Valider </td>
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG6" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Lorraine</td>
+                                <td>Mcgaughy</td>
+                                <td>Valider </td>
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG7" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+                            </tr>
+                            <tr>
+
+                                <td>Judi</td>
+                                <td>Badgett</td>
+                                <td>Valider </td>
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG8" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+
+
+                            </tr>
+                            <tr>
+
+                                <td>Granville</td>
+                                <td>Leonardo</td>
+                                <td>Valider </td>
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG9" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Lauri</td>
+                                <td>Hyland</td>
+                                <td>Valider </td>
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG10" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+                            </tr>
+                            <tr>
+
+                                <td>Maple</td>
+                                <td>Halladay</td>
+                                <td>Valider </td>
+                                <td><input type="checkbox" name="checkboxG1" id="checkboxG11" class="css-checkbox"  checked disabled /><label for="checkboxG1" class="css-label"></label></td>
+                            </tr>
+
+
+
+
+
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="6">
+                                    <div class="text-right">
+                                        <ul class="pagination">
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+        <!-- .right-sidebar -->
+        <div class="right-sidebar">
+            <div class="slimscrollright">
+                <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
+                <div class="r-panel-body">
+                    <ul class="m-t-20 chatonline">
+                        <li><b>Chat option</b></li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/genu.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/ritesh.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/arijit.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/govinda.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/hritik.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/john.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/pawandeep.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.right-sidebar -->
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+<div th:replace="fragments/footer :: footer-js"/>
+<div th:replace="fragments/footer :: footer"/>
+
+</body>
+
+</html>

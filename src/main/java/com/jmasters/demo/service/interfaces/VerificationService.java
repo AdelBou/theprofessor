@@ -6,6 +6,6 @@ import com.jmasters.demo.model.Users.Etablissement;
 import com.jmasters.demo.model.Users.Validateur;
 
 public interface VerificationService {
-    public  boolean verifyInformation(Etablissement etablissement, Information information);
-    public  boolean VerifyDossier(Etablissement etablissement, Dossier dossier);
+    public  boolean verifyInformation(Information information);
+    public  boolean VerifyDossier(Dossier dossier);
 }

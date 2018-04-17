@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <div th:replace="Fragment/header :: header-css"/>
+
+</head>
+
+<body class="fix-sidebar">
+<!-- Preloader -->
+<div class="preloader">
+    <div class="cssload-speeding-wheel"></div>
+</div>
+<div id="wrapper">
+    <!-- Top Navigation -->
+
+    <div th:replace="Fragment/header :: header"/>
+
+    <!-- End Top Navigation -->
+    <!-- Left navbar-header -->
+
+    <div th:replace="Fragment/LeftNavbarHeader :: LeftNavbarHeader"/>
+
+    <!-- Left navbar-header end -->
+
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row bg-title">
+                <!-- .page title -->
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Evaluation</h4>
+                </div>
+
+            </div>
+            <!-- .row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+
+                        <div id="exampleBasic" class="wizard">
+                            <ul class="wizard-steps" role="tablist">
+
+                                <li role="tab">
+                                    <h4><span>1</span>Activités pédagogiques</h4>
+                                </li>
+                                <li role="tab">
+                                    <h4><span>2</span>Encadrement</h4>
+                                </li>
+                                <li role="tab">
+                                    <h4><span>3</span>Activités scientifiques</h4>
+                                </li>
+                                <li role="tab">
+                                    <h4><span>4</span>Activités administratives</h4>
+                                </li>
+                            </ul>
+                            <div class="wizard-content">
+
+                                <div class="wizard-pane active " role="tabpanel">
+
+                                    <table class="table editable-table table-bordered table-striped m-b-0">
+                                        <thead>
+                                        <tr>
+
+                                            <th>Nom de l'activitée</th>
+                                            <th>Nombre</th>
+                                            <th>Notation</th>
+
+
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Nombre d'Années d’enseignement en premier cycle</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre d'Années d’enseignement en Graduation</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre d'Années d’enseignement en second cycle (master)</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre d'Années d’enseignement en post-Graduation</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre d'ouvrages édités</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nombre de manuels édités</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre de polycopes édités (> 100 pages)</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <th><strong>TOTAL</strong></th>
+                                            <th>  </th>
+                                            <td></td>
+
+                                        </tr>
+
+                                        </thead>
+                                    </table>
+
+                                    <form action="">
+                                        <div class="form-group m-b-5">
+                                            <label for="input7"><b>  Observation</b></label>
+                                            <textarea class="form-control" rows="4" id="input7" required></textarea><span class="highlight"></span> <span class="bar"></span>
+
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Confirmer</button>
+                                    </form>
+
+
+                                </div>
+                                <div class="wizard-pane" role="tabpanel">
+
+
+                                    <table class="table editable-table table-bordered table-striped m-b-0">
+                                        <thead>
+                                        <tr>
+
+                                            <th>Nom de l'activitée</th>
+                                            <th>Nombre</th>
+                                            <th>Notation</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Nombre de mémoire de fin d’études de masters encadrés et soutenus</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre de mémoires de magister dirigés et soutenus</td>
+                                            <td></td>
+                                            <td></td>
+
+
+
+                                        </tr>
+                                        <tr  >
+                                            <a th:href="@{/login}" > </a>
+                                            <td>Nombre de thèses de doctorat ou de doctorat d’état dirigées et soutenues)</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+
+
+
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <th><strong>TOTAL</strong></th>
+                                            <th colspan="2"></th>
+
+
+                                        </tr>
+                                        </thead>
+                                    </table>
+
+
+                                    <form action="">
+                                        <div class="form-group m-b-5">
+                                            <label for="input7"><b>  Observation</b></label>
+                                            <textarea class="form-control" rows="4" id="input7" required></textarea><span class="highlight"></span> <span class="bar"></span>
+
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Confirmer</button>
+                                    </form>
+
+
+
+                                </div>
+
+                                <div class="wizard-pane" role="tabpanel">
+
+                                    <table class="table editable-table table-bordered table-striped m-b-0">
+                                        <thead>
+                                        <tr>
+
+                                            <th>Nom de l'activitée</th>
+                                            <th>Nombre</th>
+                                            <th>Notation</th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td colspan="3" style="text-align: center" > Publications internationales </td>
+                                            <!--<td></td>-->
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre d'ouvrage pédagogique édité</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre de revues</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre des actes et procedings édités</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3"  style="text-align: center" >Publications nationales</td>
+                                            <!--<td></td>-->
+
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nombre d'ouvrage pédagogique édité</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre de revues</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nombre des actes et procedings édités</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3"  style="text-align: center" >Communication</td>
+                                            <!--<td></td>-->
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Internationnales</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Nationales</td>
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" style="text-align: center">Participation aux projets</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td >Responsable ou membre d'un projet de recherche</td>
+                                            <td></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" style="text-align: center" > Animations scientifiques</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Organisation de colloque, expertise,membre de omités de lecture,...</td>
+
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <th><strong>TOTAL</strong></th>
+                                            <th colspan="2"></th>
+
+
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                    <form action="">
+                                        <div class="form-group m-b-5">
+                                            <label for="input7"><b>  Observation</b></label>
+                                            <textarea class="form-control" rows="4" id="input7" required></textarea><span class="highlight"></span> <span class="bar"></span>
+
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Confirmer</button>
+                                    </form>
+
+
+                                </div>
+                                <div class="wizard-pane" role="tabpanel">
+                                    <form action="">
+                                    <table class="table editable-table table-bordered table-striped m-b-0">
+                                        <thead>
+                                        <tr>
+
+                                            <th>Nom de l'activitée</th>
+
+                                            <th>Nombre</th>
+                                            <th>Notation</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td colspan="3" style="text-align: center" > Responsabilités administratives</td>
+                                            <!--<td></td>-->
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Recteur, directeur de centre universitaire,directeur d'école,vice-recteur,doyen,vice doyen,directeur d'institu,chef de département, chef de département adjoint...</td>
+                                            <td><input type="number" class="form-control input-sm" style="width: 80px"></td>
+                                            <td></td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" style="text-align: center" >Présidence d'organes d'évaluation pédagogique et scientifique</td>
+                                            <!--<td></td>-->
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Conseil scientifiue, ou comité scientifique</td>
+                                            <td><input type="number" class="form-control input-sm" style="width: 80px"></td>
+                                            <td></td>
+
+
+
+                                        </tr>
+
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <th><strong>TOTAL</strong></th>
+                                            <th></th>
+                                            <td></td>
+
+
+                                        </tr>
+                                        </thead>
+                                    </table>
+
+                                        <div class="form-group m-b-5">
+                                            <label for="input7"><b>  Observation</b></label>
+                                            <textarea class="form-control" rows="4" id="input7" required></textarea><span class="highlight"></span> <span class="bar"></span>
+
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Confirmer</button>
+                                    </form>
+
+
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+        <!-- .right-sidebar -->
+        <div class="right-sidebar">
+            <div class="slimscrollright">
+                <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
+                <div class="r-panel-body">
+                    <ul class="m-t-20 chatonline">
+                        <li><b>Chat option</b></li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/genu.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/ritesh.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/arijit.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/govinda.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/hritik.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/john.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="plugins/images/users/pawandeep.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.right-sidebar -->
+    </div>
+    <!-- /.container-fluid -->
+    <div th:replace="Fragment/footer :: footer"/>
+    <!--<footer class="footer text-center"> 2017 &copy; Elite Admin brought to you by themedesigner.in </footer>-->
+</div>
+
+<!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+<div th:replace="Fragment/footer :: footer-js"/>
+
+<script type="text/javascript">
+    (function() {
+        $('#exampleBasic').wizard({
+            onFinish: function() {
+                swal("Depôt effectué !!", "votre dossier  est déposé ,veuillez attendre sa validation ");
+            }
+        });
+        $('#exampleBasic2').wizard({
+            onFinish: function() {
+                swal("Message Finish!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+            }
+        });
+        $('#exampleValidator').wizard({
+            onInit: function() {
+                $('#validation').formValidation({
+                    framework: 'bootstrap',
+                    fields: {
+                        username: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'The username is required'
+                                },
+                                stringLength: {
+                                    min: 6,
+                                    max: 30,
+                                    message: 'The username must be more than 6 and less than 30 characters long'
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9_\.]+$/,
+                                    message: 'The username can only consist of alphabetical, number, dot and underscore'
+                                }
+                            }
+                        },
+                        email: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'The email address is required'
+                                },
+                                emailAddress: {
+                                    message: 'The input is not a valid email address'
+                                }
+                            }
+                        },
+                        password: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'The password is required'
+                                },
+                                different: {
+                                    field: 'username',
+                                    message: 'The password cannot be the same as username'
+                                }
+                            }
+                        }
+                    }
+                });
+            },
+            validator: function() {
+                var fv = $('#validation').data('formValidation');
+
+                var $this = $(this);
+
+                // Validate the container
+                fv.validateContainer($this);
+
+                var isValidStep = fv.isValidContainer($this);
+                if (isValidStep === false || isValidStep === null) {
+                    return false;
+                }
+
+                return true;
+            },
+            onFinish: function() {
+                $('#validation').submit();
+                swal("Message Finish!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+            }
+        });
+
+        $('#accordion').wizard({
+            step: '[data-toggle="collapse"]',
+
+            buttonsAppendTo: '.panel-collapse',
+
+            templates: {
+                buttons: function() {
+                    var options = this.options;
+                    return '<div class="panel-footer"><ul class="pager">' +
+                        '<li class="previous">' +
+                        '<a href="#' + this.id + '" data-wizard="back" role="button">' + options.buttonLabels.back + '</a>' +
+
+                        '</li>' +
+                        '<li class="next">' +
+                        '<a href="#' + this.id + '" data-wizard="next" role="button">' + options.buttonLabels.next + '</a>' +
+                        //'<a href="#' + this.id + '" data-wizard="next" role="button">' + options.buttonLabels.next + '</a>' +
+                        //'<a href="#' + this.id + '" data-wizard="next" role="button">' + options.buttonLabels.next + '</a>' +
+                        '<a href="#' + this.id + '" data-wizard="finish" role="button">' + options.buttonLabels.finish + '</a>' +
+                        '</li>' +
+                        '</ul></div>';
+                }
+            },
+
+            onBeforeShow: function(step) {
+                step.$pane.collapse('show');
+            },
+
+            onBeforeHide: function(step) {
+                step.$pane.collapse('hide');
+            },
+
+            onFinish: function() {
+                swal("Message Finish!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+            }
+        });
+    })();
+</script>
+</body>
+
+</html>

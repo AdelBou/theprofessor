@@ -33,7 +33,9 @@ public class AuthServiceImp implements AuthService {
    private EtablissementRepository etablissementRepository;
 
 
+    @Override
+    public boolean addCandidat(Candidat candidat) {
 
-
-
+        return false;
+    }
 }

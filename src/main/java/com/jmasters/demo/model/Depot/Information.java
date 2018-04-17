@@ -112,4 +112,20 @@ public class Information {
 
     public Information() {
 	}
+
+	@Override
+	public String toString() {
+		return "Information{" +
+				"id=" + id +
+				", designationInfo=" + designationInfo +
+				", valeur=" + valeur +
+				", contenu='" + contenu + '\'' +
+				", coef=" + coef +
+				", valide=" + valide +
+				", verifie=" + verifie +
+				", note=" + note +
+				", dossier=" + dossier +
+				", pieceJointes=" + pieceJointes +
+				'}';
+	}
 }

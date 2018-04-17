@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<!--
+   This is a starter template page. Use this page to start your new project from
+   scratch. This page gets rid of all links and provides the needed markup only.
+   -->
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <div th:replace="fragments/header :: header-css"></div>
+    <link  href="css/css-up.css" rel="stylesheet" >
+</head>
+
+<body class="fix-sidebar">
+<!-- Preloader -->
+<div class="preloader">
+    <div class="cssload-speeding-wheel"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="wrapper">
+    <!-- Top Navigation -->
+    <div th:replace="fragments/header :: header"/>
+
+    <!-- End Top Navigation -->
+    <!-- Left navbar-header -->
+    <div th:replace="fragments/LeftNavbarHeaderCand :: LeftNavbarHeaderCand"/>
+    <!-- Left navbar-header end -->
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row bg-title">
+                <!-- .page title -->
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">hum</h4>
+                </div>
+                <!-- /.page title -->
+
+
+                <!--<table class="table table-bordered table-striped">-->
+                    <!--<thead>-->
+                    <!--<td>Activités Scientifiques</td>-->
+                    <!--<tr>-->
+                        <!--<th class="">№</th>-->
+                        <!--<th class="">Name</th>-->
+                        <!--<th class="">Email/Login</th>-->
+                        <!--<th class="">Phone</th>-->
+                        <!--<th class="">Skype</th>-->
+                        <!--<th class="">Role</th>-->
+                        <!--<th class="">Edit</th>-->
+                    <!--</tr>-->
+                    <!--</thead>-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<td style="text-align:center;" class="">1</td>-->
+                        <!--<td class="">user123</td>-->
+                        <!--<td style="text-align:center;" class="">123@hotmail.com</td>-->
+                        <!--<td style="text-align:center;" class="">0123456</td>-->
+                        <!--<td style="text-align:center;" class="">user123</td>-->
+                        <!--<td style="text-align:center;" class="">Admin</td>-->
+                        <!--<td style="text-align:center;">-->
+                            <!--<button class="btn btn-success" data-toggle="modal" data-target="#myModal" contenteditable="false">Edit</button>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td style="text-align:center;" class="">2</td>-->
+                        <!--<td class="">user456</td>-->
+                        <!--<td style="text-align:center;" class="">456@hotmail.com</td>-->
+                        <!--<td style="text-align:center;" class="">0123458</td>-->
+                        <!--<td style="text-align:center;" class="">user456</td>-->
+                        <!--<td style="text-align:center;" class="">User</td>-->
+                        <!--<td style="text-align:center;">-->
+                            <!--<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Edit</button>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+                <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+                    <!--<div class="modal-dialog">-->
+                        <!--<div class="modal-content"></div>-->
+                    <!--</div>-->
+                    <!--<div class="modal-dialog">-->
+                        <!--<div class="modal-content"></div>-->
+                    <!--</div>-->
+                    <!--<div class="modal-dialog">-->
+                        <!--<div class="modal-content">-->
+                            <!--<div class="modal-header">-->
+                                <!--<button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true" class="">×   </span><span class="sr-only">Close</span>-->
+
+                                <!--</button>-->
+                                <!--<h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+
+                            <!--</div>-->
+                            <!--<div class="modal-body"></div>-->
+                            <!--<div class="modal-footer">-->
+                                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+
+<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>-->
+                <!--<script>-->
+
+                    <!--$(".btn[data-target='#myModal']").click(function() {-->
+                        <!--var columnHeadings = $("thead th").map(function() {-->
+                            <!--return $(this).text();-->
+                        <!--}).get();-->
+                        <!--columnHeadings.pop();-->
+                        <!--var columnValues = $(this).parent().siblings().map(function() {-->
+                            <!--return $(this).text();-->
+                        <!--}).get();-->
+                        <!--var modalBody = $('<div id="modalContent"></div>');-->
+                        <!--var modalForm = $('<form role="form" name="modalForm" action="putYourPHPActionHere.php" method="post"></form>');-->
+                        <!--$.each(columnHeadings, function(i, columnHeader) {-->
+                            <!--var formGroup = $('<div class="form-group"></div>');-->
+                            <!--formGroup.append('<label for="'+columnHeader+'">'+columnHeader+'</label>');-->
+                            <!--formGroup.append('<input class="form-control" name="'+columnHeader+i+'" id="'+columnHeader+i+'" value="'+columnValues[i]+'" />');-->
+                            <!--modalForm.append(formGroup);-->
+                        <!--});-->
+                        <!--modalBody.append(modalForm);-->
+                        <!--$('.modal-body').html(modalBody);-->
+                    <!--});-->
+                    <!--$('.modal-footer .btn-primary').click(function() {-->
+                        <!--$('form[name="modalForm"]').submit();-->
+                    <!--});-->
+                <!--</script>-->
+
+
+
+                <!--haaaaaaaaaaaammmmmmmmmmmmmmoooooooooooooouuuuuuuuuuuuuuuuuuuuuuu -->
+
+
+
+
+
+                <!--<div class="row">-->
+                    <!--<div class="col-md-12">-->
+                        <!--<div class="white-box">-->
+
+                            <!--<table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle" data-page-size="200">-->
+                                <!--<thead>-->
+                                <!--<tr>-->
+                                    <!--<th data-sort-initial="" data-toggle="" style="background-color: #4f5467; color: white">Critère</th>-->
+                                    <!--<th data-sort-initial="" data-toggle="" style="background-color: #4f5467; color: white">Valeur</th>-->
+                                    <!--<th  style="background-color: #4f5467 ; color: white" > Notation</th>-->
+
+                                <!--</tr>-->
+                                <!--</thead>-->
+
+                                <!--<tbody>-->
+                                <!--<tr>-->
+                                    <!--<td colspan="2" style="text-align: center"> <b>Activités pédagogiques</b></td>-->
+
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre d'Années d’enseignement en premier cycle</td>-->
+                                    <!--<td>-->
+
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre d'Années d’enseignement en Graduation</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre d'Années d’enseignement en second cycle (master)</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre d'ouvrages édités</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre de manuels édités</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre de polycopes édités (> 100 pages)</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+                                    <!--</td>-->
+
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td colspan="2" style="text-align: center"><b> Ecadrement</b></td>-->
+
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre de mémoire de fin d’études de masters encadrés et soutenus</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre de mémoires de magister dirigés et soutenus</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre de thèses de doctorat ou de doctorat d’état dirigées et soutenues)</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+
+                                <!--<tr>-->
+                                    <!--<td colspan="2" style="text-align: center"><b> Activités scientifiques</b></td>-->
+
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td colspan="2">1-Publications internationales:</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre d'ouvrage pédagogique édité</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre de revues</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre des actes et procedings édités</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+
+                                <!--<tr>-->
+                                    <!--<td colspan="2">2-Publications nationales:</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre d'ouvrage pédagogique édité</td>-->
+                                    <!--<td>  <div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre de revues</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nombre des actes et procedings édités</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td colspan="2" >3-Communication:</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Internationnales</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Nationales</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td colspan="2">4-Responsable ou membre d'un projet de rechrche</td>-->
+
+                                <!--</tr>-->
+
+                                <!--<tr>-->
+                                    <!--<td colspan="2" >5-Animations scientifiques:</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Organisation de colloque, expertise,membre de omités de lecture,...</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+                                    <!--</td>-->
+
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td colspan="2" style="text-align: center"><b> Activités administratives</b></td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td colspan="2">1-Responsabilités administratives :</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td >Recteur, directeur de centre universitaire,directeur d'école,vice-recteur,doyen,vice doyen,directeur d'institu,chef de département, chef de département adjoint...</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td colspan="2">2-Présidence d'organes d'évaluation pédagogique et scientifique:</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td >Conseil scientifique, ou comité scientifique</td>-->
+                                    <!--<td>-->
+                                        <!--<div class="col-sm-6 col-md-4 col-lg-3"> <i class="ti-download"></i>  </div>-->
+                                        <!--<span style="color: #0000ff;"><a th:href="@{plugins/images/Gris3.png}" downloa?>Télécharger</a></span>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
+
+                                <!--</tbody>-->
+                                <!--<tfoot>-->
+                                <!--<tr>-->
+                                    <!--<td colspan="6">-->
+                                        <!--<div class="text-right">-->
+                                            <!--<ul class="pagination">-->
+                                            <!--</ul>-->
+                                        <!--</div>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
+                                <!--</tfoot>-->
+                            <!--</table>-->
+
+
+                        <!--</div>-->
+
+
+                    <!--</div>-->
+                <!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+                <div class="upload1">
+                    <div class="upload-files1">
+                        <header>
+                            <p>
+                                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                <span class="up">up</span>
+                                <span class="load1">load</span>
+                            </p>
+                        </header>
+                        <div class="body" id="dropa">
+                            <i class="fa fa-file-text-o pointer-none" aria-hidden="true"></i>
+                            <p class="pointer-none"><b>Drag and drop</b> files here <br /> or <a href="" id="triggerFilea">browse</a> to begin the upload</p>
+                            <input type="file" multiple="multiple" />
+                        </div>
+                        <footer>
+                            <div class="divider">
+                                <span><AR>FILES</AR></span>
+                            </div>
+                            <div class="list-files1">
+                                <!--   template   -->
+                            </div>
+                            <button class="importara">UPDATE FILES</button>
+                        </footer>
+                    </div>
+                </div>
+<!--<script src="js/js-up.js"></script>-->
+
+
+
+
+
+
+
+                <!--<div id="drop-area">-->
+                    <!--<form class="my-form">-->
+                        <!--<p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>-->
+                        <!--<input type="file" id="fileElem" multiple accept="/*" onchange="handleFiles(this.files)">-->
+                        <!--<label class="button" for="fileElem">Select some files</label>-->
+                    <!--</form>-->
+                    <!--<progress id="progress-bar" max=100 value=0></progress>-->
+                    <!--<div id="gallery" /></div>-->
+
+
+
+
+
+
+
+            </div>
+            <script>
+
+                //DOM
+const v$ = document.querySelector.bind(document);
+
+//APP
+let App = {};
+App.init = (function() {
+	//Init
+	function handleFileSelect1(evt) {
+		const files = evt.target.files; // FileList object
+
+		//files template
+		let template = `${Object.keys(files)
+			.map(file => `<div class="file file-- v${file}">
+     <div class="name"><span>v${files[file].name}</span></div>
+     <div class="progress active"></div>
+     <div class="done">
+	<a href="" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000">
+		<g><path id="path1" d="M500,10C229.4,10,10,229.4,10,500c0,270.6,219.4,490,490,490c270.6,0,490-219.4,490-490C990,229.4,770.6,10,500,10z M500,967.7C241.7,967.7,32.3,758.3,32.3,500C32.3,241.7,241.7,32.3,500,32.3c258.3,0,467.7,209.4,467.7,467.7C967.7,758.3,758.3,967.7,500,967.7z M748.4,325L448,623.1L301.6,477.9c-4.4-4.3-11.4-4.3-15.8,0c-4.4,4.3-4.4,11.3,0,15.6l151.2,150c0.5,1.3,1.4,2.6,2.5,3.7c4.4,4.3,11.4,4.3,15.8,0l308.9-306.5c4.4-4.3,4.4-11.3,0-15.6C759.8,320.7,752.7,320.7,748.4,325z"</g>
+		</svg>
+						</a>
+     </div>
+    </div>`)
+			.join("")}`;
+
+		v$("#dropa").classList.add("hidden");
+		v$("footer").classList.add("hasFiles");
+		v$(".importara").classList.add("active");
+		setTimeout(() => {
+			v$(".list-files1").innerHTML = template;
+		}, 1000);
+
+		Object.keys(files).forEach(file => {
+			let load = 2000 + (file * 2000); // fake load
+			setTimeout(() => {
+				v$(`.file--v${file}`).querySelector(".progress").classList.remove("active");
+				v$(`.file--v${file}`).querySelector(".done").classList.add("anim");
+			}, load);
+		});
+	}
+
+	// trigger input
+	v$("#triggerFilea").addEventListener("click", evt => {
+		evt.preventDefault();
+		v$("input[type=file]").click();
+	});
+
+	// drop events
+	v$("#dropa").ondragleave = evt => {
+		v$("#dropa").classList.remove("active");
+		evt.preventDefault();
+	};
+	v$("#dropa").ondragover = v$("#dropa").ondragenter = evt => {
+		v$("#dropa").classList.add("active");
+		evt.preventDefault();
+	};
+	v$("#dropa").ondrop = evt => {
+		v$("input[type=file]").files = evt.dataTransfer.files;
+		v$("footer").classList.add("hasFiles");
+		v$("#dropa").classList.remove("active");
+		evt.preventDefault();
+	};
+
+	//upload more
+	v$(".importara").addEventListener("click", () => {
+		v$(".list-files1").innerHTML = "";
+		v$("footer").classList.remove("hasFiles");
+		v$(".importara").classList.remove("active");
+		setTimeout(() => {
+			v$("#dropa").classList.remove("hidden");
+		}, 500);
+	});
+
+	// input change
+	v$("input[type=file]").addEventListener("change", handleFileSelect1);
+})();
+
+            </script>
+
+
+             <!--<script type="text/javascript" >-->
+                 <!--// ************************ Drag and drop ***************** //-->
+                 <!--let dropArea = document.getElementById("drop-area")-->
+
+<!--// Prevent default drag behaviors-->
+                 <!--;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {-->
+                     <!--dropArea.addEventListener(eventName, preventDefaults, false)-->
+                     <!--document.body.addEventListener(eventName, preventDefaults, false)-->
+                 <!--})-->
+
+<!--// Highlight drop area when item is dragged over it-->
+                 <!--;['dragenter', 'dragover'].forEach(eventName => {-->
+                     <!--dropArea.addEventListener(eventName, highlight, false)-->
+                 <!--})-->
+
+                 <!--;['dragleave', 'drop'].forEach(eventName => {-->
+                     <!--dropArea.addEventListener(eventName, unhighlight, false)-->
+                 <!--})-->
+
+                 <!--// Handle dropped files-->
+                 <!--dropArea.addEventListener('drop', handleDrop, false)-->
+
+                 <!--function preventDefaults (e) {-->
+                     <!--e.preventDefault()-->
+                     <!--e.stopPropagation()-->
+                 <!--}-->
+
+                 <!--function highlight(e) {-->
+                     <!--dropArea.classList.add('highlight')-->
+                 <!--}-->
+
+                 <!--function unhighlight(e) {-->
+                     <!--dropArea.classList.remove('active')-->
+                 <!--}-->
+
+                 <!--function handleDrop(e) {-->
+                     <!--var dt = e.dataTransfer-->
+                     <!--var files = dt.files-->
+
+                     <!--handleFiles(files)-->
+                 <!--}-->
+
+                 <!--let uploadProgress = []-->
+                 <!--let progressBar = document.getElementById('progress-bar')-->
+
+                 <!--function initializeProgress(numFiles) {-->
+                     <!--progressBar.value = 0-->
+                     <!--uploadProgress = []-->
+
+                     <!--for(let i = numFiles; i > 0; i&#45;&#45;) {-->
+                         <!--uploadProgress.push(0)-->
+                     <!--}-->
+                 <!--}-->
+
+                 <!--function updateProgress(fileNumber, percent) {-->
+                     <!--uploadProgress[fileNumber] = percent-->
+                     <!--let total = uploadProgress.reduce((tot, curr) => tot + curr, 0) / uploadProgress.length-->
+                     <!--console.debug('update', fileNumber, percent, total)-->
+                     <!--progressBar.value = total-->
+                 <!--}-->
+
+                 <!--function handleFiles(files) {-->
+                     <!--files = [...files]-->
+                     <!--initializeProgress(files.length)-->
+                     <!--files.forEach(uploadFile)-->
+                     <!--files.forEach(previewFile)-->
+                 <!--}-->
+
+                 <!--function previewFile(file) {-->
+                     <!--let reader = new FileReader()-->
+                     <!--reader.readAsDataURL(file)-->
+                     <!--reader.onloadend = function() {-->
+                         <!--let img = document.createElement('img')-->
+                         <!--img.src = reader.result-->
+                         <!--document.getElementById('gallery').appendChild(img)-->
+
+                     <!--}-->
+                 <!--}-->
+
+                 <!--function uploadFile(file, i) {-->
+                     <!--var url = 'https://api.cloudinary.com/v1_1/joezim007/image/upload'-->
+                     <!--var xhr = new XMLHttpRequest()-->
+                     <!--var formData = new FormData()-->
+                     <!--xhr.open('POST', url, true)-->
+                     <!--xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')-->
+
+                     <!--// Update progress (can be used to show progress indicator)-->
+                     <!--xhr.upload.addEventListener("progress", function(e) {-->
+                         <!--updateProgress(i, (e.loaded * 100.0 / e.total) || 100)-->
+                     <!--})-->
+
+                     <!--xhr.addEventListener('readystatechange', function(e) {-->
+                         <!--if (xhr.readyState == 4 && xhr.status == 200) {-->
+                             <!--updateProgress(i, 100) // <- Add this-->
+                         <!--}-->
+                         <!--else if (xhr.readyState == 4 && xhr.status != 200) {-->
+                             <!--// Error. Inform the user-->
+                         <!--}-->
+                     <!--})-->
+
+                     <!--formData.append('upload_preset', 'ujpu6gyk')-->
+                     <!--formData.append('file', file)-->
+                     <!--xhr.send(formData)-->
+                 <!--}-->
+
+
+
+
+
+
+
+             <!--</script>-->
+
+
+
+            <style>
+
+                #drop-area {
+                    border: 2px dashed #ccc;
+                    border-radius: 20px;
+                    width: 480px;
+                    font-family: sans-serif;
+                    margin: 100px auto;
+                    padding: 20px;
+                }
+                #drop-area.highlight {
+                    border-color: purple;
+                }
+                p {
+                    margin-top: 0;
+                }
+                .my-form {
+                    margin-bottom: 10px;
+                }
+                #gallery {
+                    margin-top: 10px;
+                }
+                #gallery img {
+                    width: 150px;
+                    margin-bottom: 10px;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+                .button {
+                    display: inline-block;
+                    padding: 10px;
+                    background: #ccc;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                }
+                .button:hover {
+                    background: #ddd;
+                }
+                #fileElem {
+                    display: none;
+                }
+
+
+
+            </style>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+            <!-- .right-sidebar -->
+            <!--<div class="right-sidebar">-->
+                <!--<div class="slimscrollright">-->
+                    <!--<div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>-->
+                    <!--<div class="r-panel-body">-->
+                        <!--<ul class="m-t-20 chatonline">-->
+                            <!--<li><b>Chat option</b></li>-->
+                            <!--<li>-->
+                                <!--<a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="javascript:void(0)"><img src="plugins/images/users/genu.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="javascript:void(0)"><img src="plugins/images/users/ritesh.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="javascript:void(0)"><img src="plugins/images/users/arijit.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="javascript:void(0)"><img src="plugins/images/users/govinda.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="javascript:void(0)"><img src="plugins/images/users/hritik.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="javascript:void(0)"><img src="plugins/images/users/john.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="javascript:void(0)"><img src="plugins/images/users/pawandeep.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+
+
+
+
+
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+
+    <div th:replace="fragments/footer :: footer"/>
+
+</div>
+<div th:replace="fragments/footer :: footer-js"/>
+
+
+
+</body>
+</html>

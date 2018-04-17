@@ -17,6 +17,7 @@ public class Domaine {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String designation;
+
 	@OneToMany(mappedBy = "domaine")
 	private Set<Specialite> specialites;
 

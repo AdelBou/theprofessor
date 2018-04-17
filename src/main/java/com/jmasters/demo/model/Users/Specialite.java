@@ -11,6 +11,7 @@ public class Specialite {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String designation;
+
     @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="id_domaine")
     private Domaine domaine;

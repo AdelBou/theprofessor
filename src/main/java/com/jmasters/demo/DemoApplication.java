@@ -1,55 +1,39 @@
 package com.jmasters.demo;
 
+import com.jmasters.demo.controller.Route.HomeController;
+import com.jmasters.demo.model.Depot.Dossier;
+import com.jmasters.demo.model.Depot.Information;
 import com.jmasters.demo.model.Users.MembreCun;
 import com.jmasters.demo.repository.Depot.DossierRepository;
 import com.jmasters.demo.repository.Evaluation.CunRepository;
 import com.jmasters.demo.repository.Evaluation.GrilleRepository;
 import com.jmasters.demo.repository.Users.*;
+import com.jmasters.demo.service.implementations.VerificationServiceImp;
+import com.jmasters.demo.service.interfaces.VerificationService;
+import com.jmasters.demo.service.storage.StorageProperties;
+import com.jmasters.demo.service.storage.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+
+import java.io.File;
 
 @SpringBootApplication
-public class DemoApplication implements CommandLineRunner {
-	@Autowired
-	private  CompteRepository compteRepository;
-	@Autowired
-	private ValidateurRepository validateurRepository;
-	@Autowired
-	private MembreCunRepository membreCunRepository;
-
-	@Autowired
-	private SpecialiteRepository specialiteRepository;
-
-	@Autowired
-	private DomaineRepository domaineRepository;
-
-	@Autowired
-	private CandidatRepository candidatRepository;
-	@Autowired
-	private CunRepository cunRepository;
-
-	@Autowired
-	private GrilleRepository grilleRepository;
-
-	@Autowired
-	private CritereRepository critereRepository;
-
-	@Autowired
-	private DossierRepository dossierRepository;
-
-    @Autowired
-    private UtilisateurRepository userRepository;
-
+@EnableConfigurationProperties(StorageProperties.class)
+public class DemoApplication  {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-
-
+	@Bean
+	CommandLineRunner init(StorageService storageService) {
+		return (args) -> {
+			storageService.deleteAll();
+			storageService.init();
+		};
 	}
 }

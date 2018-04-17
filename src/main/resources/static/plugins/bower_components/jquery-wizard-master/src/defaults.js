@@ -42,9 +42,9 @@ export default {
   enableWhenVisited: false,
 
   buttonLabels: {
-    next: 'Next',
-    back: 'Back',
-    finish: 'Finish'
+    next: 'Suivant',
+    back: 'Retour',
+    finish: 'Déposer le dossier'
   },
 
   loading: {

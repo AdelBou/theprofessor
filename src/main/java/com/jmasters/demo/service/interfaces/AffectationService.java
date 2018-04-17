@@ -1,4 +1,4 @@
 package com.jmasters.demo.service.interfaces;
 
-public interface DistributeDossierService {
+public interface AffectationService {
 }
